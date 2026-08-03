@@ -1,4 +1,6 @@
-const lines=[
+const terminal = document.getElementById("terminal");
+
+const lines = [
 
 "> boot recovery.exe",
 
@@ -16,45 +18,71 @@ const lines=[
 
 "",
 
-"Incident ID : US-001",
-
-"",
-
 "Authenticating stakeholder...",
 
 "",
 
-"Access Granted."
+"Access Granted.",
+
+"",
+
+"",
+
+"Hi, Senior Project Manager.",
+
+"...my favourite Python developer.",
+
+"",
+
+"try:",
+
+"    us = together_again",
+
+"except Exception:",
+
+'    print("I\'m sorry.")',
+
+"",
+
+"I know there isn't a rollback for words.",
+
+"",
+
+"But if I could rebuild one thing from scratch,",
+
+"it'd be the moment I hurt you.",
+
+"",
+
+"You deserve better from me.",
+
+"",
+
+"I'm sorry.",
+
+"",
+
+'status = "recovering"',
+
+"",
+
+'status = "recovered"',
+
+"# ...if you'll let me. ❤️"
 
 ];
 
-let terminal=document.getElementById("terminal");
-
-let i=0;
+let line = 0;
 
 function typeLine(){
 
-if(i<lines.length){
+    if(line >= lines.length) return;
 
-terminal.innerHTML+=lines[i]+"\n";
+    terminal.innerHTML += lines[line] + "\n";
 
-i++;
+    line++;
 
-setTimeout(typeLine,700);
-
-}
-
-else{
-
-setTimeout(()=>{
-
-document.getElementById("loadingScreen").style.display="none";
-
-document.getElementById("intro").classList.remove("hidden");
-
-},1200);
-
-}
+    setTimeout(typeLine,900);
 
 }
 
