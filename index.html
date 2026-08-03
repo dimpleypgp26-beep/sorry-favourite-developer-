@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Incident #US-001</title>
@@ -12,19 +10,83 @@
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div id="terminal"></div>
+<section id="boot">
+
+<div class="terminal">
+
+<p>> boot recovery.exe</p>
+
+<p>Loading deployment...</p>
+
+<p>Checking production...</p>
+
+<p>Production incident detected.</p>
+
+<p>Authenticating stakeholder...</p>
+
+<p>Access Granted.</p>
+
+<button id="continueBtn">
+
+Continue →
+
+</button>
+
+</div>
+
+</section>
+
+<section id="github">
+
+<div class="github">
+
+<h1>GitHub</h1>
+
+<h2>Repository</h2>
+
+<h3>us-service</h3>
+
+<hr>
+
+<p>Latest Commit</p>
+
+<p><strong>fix:</strong> relationship incident</p>
+
+<p>Author: Dimple</p>
+
+<br>
+
+<button id="incidentBtn">
+
+Open Incident
+
+</button>
+
+</div>
+
+</section>
+
+<section id="dashboard" style="display:none;"></section>
+
+<section id="terminal" style="display:none;"></section>
+
+<section id="incident" style="display:none;"></section>
+
+<section id="gitdiff" style="display:none;"></section>
+
+<section id="future" style="display:none;"></section>
+
+<section id="ending" style="display:none;"></section>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
